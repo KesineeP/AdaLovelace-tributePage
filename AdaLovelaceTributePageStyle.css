@@ -21,7 +21,7 @@ img {
 }
 #img-caption {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 #tribute-info {
@@ -41,6 +41,7 @@ img {
   position: relative;
   color: #212121;
   border-left: 2px solid darkred;
+  font-size: 1rem;
 }
 p {
   margin: 0;
@@ -54,7 +55,7 @@ p {
   top: 0;
   display: block;
   font-weight: 700;
-  font-size: 1rem;
+  
 }
 
 .timeline-item::after {
@@ -80,4 +81,16 @@ a {
 a:hover,
 a:focus {
   color: #212121;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 250px;
+  }
+  h2, h3, p {
+    font-size: .8rem;
+  }
+  .timeline-item {
+    font-size: .8rem;
+  }
 }
